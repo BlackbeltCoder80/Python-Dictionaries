@@ -63,7 +63,7 @@ def service_tickets_menu():
 def complete_service_ticket():
     service_tickets_menu()
     try:
-        ticket_id = (input("\nPlease enter the Ticket ID, (e.g Ticket00) you wish to mark completed: "))
+        ticket_id = (input("\nPlease enter the Ticket ID, (e.g Ticket000) you wish to mark completed: "))
         found = False
         for ticket in service_tickets: # Check if the number is valid
          if ticket["Ticket ID"] == ticket_id:
@@ -74,16 +74,16 @@ def complete_service_ticket():
         print("\nInvalid input! Please enter the correct Ticket ID (e.g Ticket000)")
 
 
-# Complete Service Tickets
+# Reopen Service Tickets
 def reopen_service_ticket():
     service_tickets_menu()
     try:
-        ticket_id = (input("\nPlease enter the Ticket ID, (e.g Ticket00) you wish to mark completed: "))
+        ticket_id = (input("\nPlease enter the Ticket ID, (e.g Ticket000) you wish to mark completed: "))
         found = False
         for ticket in service_tickets: # Check if the number is valid
          if ticket["Ticket ID"] == ticket_id:
-            ticket["Status"] ="Open"
-        print(f"\nTask '{ticket_id}' marked as Closed \u2705.")
+            ticket["Status"] ="Reopen"
+        print(f"\nTask '{ticket_id}' marked as Reopend \u2705.")
         found = True
     except KeyError:
         print("\nInvalid input! Please enter the correct Ticket ID (e.g Ticket000)")
