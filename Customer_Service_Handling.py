@@ -106,7 +106,7 @@ while True:
         print("\nGoodbye!")
         break
     else:
-        print("\nInvalid input! Please enter a number between 1 and 4.")
+        print("\nInvalid input! Please enter a number between 1 and 5.")
 
 
 
